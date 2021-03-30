@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-
+const head = function(actual, expected) {
+  const arr = actual[0];
+  return arr;
+};

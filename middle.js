@@ -1,21 +1,3 @@
-function eqArrays(arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) {
-        return false;
-      }
-  }
-  return true;
-};
-
-function assertArraysEqual(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-  console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
-
-
 
 /* iterate over array to find index values
 return values in a new array
@@ -45,12 +27,5 @@ const middle = function(array) {
   return newArr
 };
 
-// console.log(middle([1]));
-// console.log(middle([1, 2])); 
-// console.log(middle([1, 2, 3, 4, 5]));
-// console.log(middle([1, 2, 3, 4, 5, 6]));
 
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []); 
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+module.exports = middle

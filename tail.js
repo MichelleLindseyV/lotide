@@ -1,10 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
 const tail = function(actual) {
   if (actual.length > 1) {
@@ -14,4 +7,4 @@ const tail = function(actual) {
   }
 };
 
-
+module.exports = tail

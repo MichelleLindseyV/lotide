@@ -1,12 +1,10 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
+
+
+const head = function(arr) {
+  const firstVal = arr[0]
+  return firstVal;
 };
 
-const head = function(actual, expected) {
-  const arr = actual[0];
-  return arr;
-};
+
+
+module.exports = head;
